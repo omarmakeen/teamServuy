@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Loading } from 'ionic-angular';
 import { PeopleService } from '../../providers/people-service/people-service'
 
 @Component({
@@ -12,14 +12,29 @@ export class Page1 {
 
   constructor(private navController:NavController, public peopleService:PeopleService) {
 
+
     this.loadPeople();
 
   }
 
   loadPeople() {
+
+
+    this.presentLoading();
     this.peopleService.load()
       .then(data => {
         this.people = data;
       });
+
+    //this.navController.dismiss(loading);
+  }
+
+
+  presentLoading() {
+    let loading = Loading.create({
+      content: "Please wait...",
+      dismissOnPageChange: true
+    });
+    this.navController.present(loading);
   }
 }
