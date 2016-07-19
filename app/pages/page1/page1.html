@@ -14,11 +14,11 @@
       Available Servues
     </ion-list-header>
 
-    <ion-item>
+    <ion-item *ngFor="let person of people">
       <ion-avatar item-left>
         <img src="build/img/girl_face.png">
       </ion-avatar>
-      <h2>Omar Makeen</h2>
+      <h2>{{person.name.first}} {{person.name.last}}</h2>
       <p>Senior Frontend Developer</p>
     </ion-item>
   </ion-list>
