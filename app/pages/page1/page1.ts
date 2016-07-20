@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, Loading } from 'ionic-angular';
-import { PeopleService } from '../../providers/people-service/people-service'
-import { PeopleSearch } from '../../pipes/people-search'
+import { PeopleService } from '../../providers/people-service/people-service';
+import { PeopleSearch } from '../../pipes/people-search';
+import { SurveyDetailsPage } from '../survey-details/survey-details';
+
 
 @Component({
   templateUrl: 'build/pages/page1/page1.html',
@@ -32,6 +34,10 @@ export class Page1 {
       dismissOnPageChange: true
     });
     this.navController.present(loading);
+  }
+
+  openSurvey(person) {
+    this.navController.push(SurveyDetailsPage, { person: person });
   }
 
 }

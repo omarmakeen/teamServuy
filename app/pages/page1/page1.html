@@ -9,14 +9,14 @@
 
 
 <ion-content>
+  <ion-searchbar
+    [(ngModel)]="searchQuery">
+  </ion-searchbar>
   <ion-list>
     <ion-list-header>
-      Available Servues
+      Available Surveys
     </ion-list-header>
-    <ion-searchbar
-      [(ngModel)]="searchQuery">
-    </ion-searchbar>
-    <ion-item *ngFor="let person of people | peopleSearch:searchQuery">
+    <ion-item *ngFor="let person of people | peopleSearch:searchQuery" (click)="openSurvey(person)">
       <ion-avatar item-left>
         <img src="build/img/girl_face.png">
       </ion-avatar>
