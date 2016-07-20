@@ -9,6 +9,7 @@ import { PeopleService } from '../../providers/people-service/people-service'
 export class Page1 {
 
   public people:any;
+  public copyPeople:any;
 
   constructor(private navController:NavController, public peopleService:PeopleService) {
 
@@ -19,14 +20,11 @@ export class Page1 {
 
   loadPeople() {
 
-
-    this.presentLoading();
+    //this.presentLoading();
     this.peopleService.load()
       .then(data => {
         this.people = data;
       });
-
-    //this.navController.dismiss(loading);
   }
 
 
@@ -36,5 +34,26 @@ export class Page1 {
       dismissOnPageChange: true
     });
     this.navController.present(loading);
+  }
+
+
+  getItems(ev) {
+    // Reset items back to all of the items
+    //this.initializeItems();
+
+    // set val to the value of the ev target
+    var val = ev.target.value;
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.people = this.people.filter((person) => {
+        return (person.name.first.toLowerCase().indexOf(val.toLowerCase()) > -1 || person.name.last.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
+
+  }
+
+  onSearchCancel(ev) {
+    this.loadPeople();
   }
 }

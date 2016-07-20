@@ -13,7 +13,10 @@
     <ion-list-header>
       Available Servues
     </ion-list-header>
-
+    <ion-searchbar
+      (ionInput)="getItems($event)"
+      (ionClear)="onSearchCancel($event)">
+    </ion-searchbar>
     <ion-item *ngFor="let person of people">
       <ion-avatar item-left>
         <img src="build/img/girl_face.png">
