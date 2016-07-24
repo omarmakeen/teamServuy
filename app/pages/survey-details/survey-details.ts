@@ -13,9 +13,20 @@ import { NavController,NavParams } from 'ionic-angular';
 export class SurveyDetailsPage {
 
   person;
+  survey;
 
-  constructor(private nav:NavController, params:NavParams) {
+  constructor(private navController:NavController, params:NavParams) {
     this.person = params.data.person;
+    this.survey = params.data.survey;
+  }
+
+  closePage() {
+    this.navController.pop(SurveyDetailsPage);
+    this.navController.push(SurveyDetailsPage);
+  }
+
+  backY() {
+    console.log('back ya ma3alem')
   }
 
 }

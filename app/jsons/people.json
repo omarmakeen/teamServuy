@@ -1,0 +1,12 @@
+{
+  "people": [
+    {
+      "id": "5734",
+      "group_id": "5734",
+      "firstName": "Omar",
+      "lastName": "Makeen",
+      "title": "Senior Frontend Developer",
+      "photo": "omar.png"
+    }
+  ]
+}

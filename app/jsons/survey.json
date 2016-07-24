@@ -1,0 +1,174 @@
+[
+  {
+    "kpi": 1,
+    "question": "Is the candidate solution-oriented? i.e. does NOT focus on problems but rather tries to reach solutions?"
+  },
+  {
+    "kpi": 2,
+    "question": "How hard-working is the candidate?"
+  },
+  {
+    "kpi": 3,
+    "question": "Does the candidate accept constructive feedback about his/her work, does he/she take responsibility for owns mistakes, admits them, accepts comments and and work on improving?"
+  },
+  {
+    "kpi": 4,
+    "question": "how far does the candidate show ownership towards the projects? E.g does he provide support when he is done from his commitment , does he try to deliver despite obstacles ?"
+  },
+  {
+    "kpi": 5,
+    "question": "How well does the candidate work with clients? Is the client satisfied? Can he gain his trust?"
+  },
+  {
+    "kpi": 6,
+    "question": "How professionally does the candidate behave?"
+  },
+  {
+    "kpi": 7,
+    "question": "How far the candidate follow project process?"
+  },
+  {
+    "kpi": 8,
+    "question": "How much trust do you have in the candidate's ability to make the right decisions?"
+  },
+  {
+    "kpi": 9,
+    "question": "How much trust do you have in the candidate's ability to perform a correct job if left alone? E.g. would he/she deliver rightly with minimum follow-up? Go in the right direction, delivers on time, and delivers high quality, etc.?"
+  },
+  {
+    "kpi": 10,
+    "question": "How well does the candidate handle stress? E.g. does he/she provide less quality if put under stress?"
+  },
+  {
+    "kpi": 11,
+    "question": "How well does the candidate collaborate and communicate with other employees , interface with clients and be a company Ambassador?"
+  },
+  {
+    "kpi": 12,
+    "question": "Rate the candidate's ability to solve NON-technical problems, e.g. team conflicts, spirit issues, overload, etc. & also contribute to solving team issues (process, plan, etc.)"
+  },
+  {
+    "kpi": 13,
+    "question": "How far the candidate is capable of maintaining good positive team spirit & help creating positive atmosphere for their work"
+  },
+  {
+    "kpi": 14,
+    "question": "How do you rate the candidate felixabilty  to share his knowledge with his colleagues?\nScore indicate no of sessions he shared\nGuidelines : Score indicates the number of lessons learnt shared"
+  },
+  {
+    "kpi": 15,
+    "question": "Did the candidate fill in all assigned survives on time and with needed quality if any?"
+  },
+  {
+    "kpi": 16,
+    "question": "When the business priorities change, how quickly does the candidate adjust to changing priorities?"
+  },
+  {
+    "kpi": 17,
+    "question": "How far does the candidate accept new assignments ? E.g assignments not directly related to his core competency."
+  },
+  {
+    "kpi": 18,
+    "question": "How punctual is the candidate? E.g. comes to the office on time, attends the meetings on time, plan his vacations etc."
+  },
+  {
+    "kpi": 19,
+    "question": "How much attention to detail does the candidate have? E.g. covers all the required details, ask the right questions early, fully understand the business. etc."
+  },
+  {
+    "kpi": 20,
+    "question": "How do you rate the candidate's ability to bring new innovative ideas that support his team?"
+  },
+  {
+    "kpi": 21,
+    "question": "How often does the candidate meet his deadlines?"
+  },
+  {
+    "kpi": 22,
+    "question": "How do you rate the candidate level in UI development? E.G: HTML,CSS,etc.."
+  },
+  {
+    "kpi": 23,
+    "question": "How do you rate the candidate level in Front End development? E.G: Jquery, Javascript, Angualr,etc.."
+  },
+  {
+    "kpi": 24,
+    "question": "How do you rate the quality of the candidate's source code?\nGuideline :  score should be with respect to  min X defect per US , where X <  team defect threshold"
+  },
+  {
+    "kpi": 25,
+    "question": "how far the candidate is keen to create reusable, scalable and maintaible solution?"
+  },
+  {
+    "kpi": 26,
+    "question": "Rate the candidate accuracy of code review"
+  },
+  {
+    "kpi": 27,
+    "question": "Rate the candidate's ability to solve technical problems"
+  },
+  {
+    "kpi": 28,
+    "question": "Rate the candidate ability to provide proper design for a problem"
+  },
+  {
+    "kpi": 29,
+    "question": "How do you rate the candidate's code documentation and Project technical documentation?"
+  },
+  {
+    "kpi": 30,
+    "question": "Rate the candidate's unit test business coverage\nGuideline for TL: score represent % of modules that doesn’t have auto unit test"
+  },
+  {
+    "kpi": 31,
+    "question": "Rate the candidate as fast learner"
+  },
+  {
+    "kpi": 32,
+    "question": "How far is the candidate up to date with  latest technology in his area of expertise?\n\nGuidelines : Score indicate no of new update about technology  / business (rate according to the seniority of the member 5 = fair session, 8 =  good session, 10 =  excellent session)"
+  },
+  {
+    "kpi": 33,
+    "question": "Rate the candidate's ability to provide reliable estimation"
+  },
+  {
+    "kpi": 34,
+    "question": "How Far the candidate ensure delivery with high quality & applies the standard ways of ensuring that, e.g. code reviews, etc."
+  },
+  {
+    "kpi": 35,
+    "question": "Rate the candidate ability to align and orchestrate the work of multiple platforms at the same time?"
+  },
+  {
+    "kpi": 36,
+    "question": "Rate the candidate overall picture understanding?"
+  },
+  {
+    "kpi": 37,
+    "question": "Rate the candidate's capability to set the right priorities"
+  },
+  {
+    "kpi": 38,
+    "question": "Rate the Candidate's ability to distribute the tasks among team members and follow-up on them effectively"
+  },
+  {
+    "kpi": 39,
+    "question": "Rate the candidate's ability to delegate the right tasks and keep the right tasks for him/her-self, in the right effective manner"
+  },
+  {
+    "kpi": 40,
+    "question": "How far  does the candidate prepare needed work for the next release effectively ? E.G : align with BE readiness , UI readiness, raise relevant risks, work closely with BA"
+  },
+  {
+    "kpi": 41,
+    "question": "How far  does the candidate Support Capability manager in leading capability by providing ideas, leading initiatives, team development planetc.."
+  },
+  {
+    "kpi": 42,
+    "question": "Did the candidate managed to c complete all mandatory  training on time as per development plan"
+  },
+  {
+    "kpi": "",
+    "question": "Any other specific feedback about the candidate you want to share in free text?"
+  }
+]

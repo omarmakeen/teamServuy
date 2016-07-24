@@ -6,13 +6,57 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>surveyDetails</ion-title>
+  <ion-navbar hideBackButton="true">
+
+    <ion-title>
+      <button primary clear end>
+        <ion-icon name='exit' is-active="false"></ion-icon>
+      </button>
+      surveyDetails
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-{{ person.name.first }}
+  <ion-card class="vcenter">
+
+    <img src="build/img/performance.png"/>
+
+    <ion-card-header>
+      KPI: {{survey[0].kpi}}
+    </ion-card-header>
+    <ion-card-content>
+      {{survey[0].question}}
+    </ion-card-content>
+
+
+    <ion-item>
+      <ion-range min="1" max="10" step="1" snaps="true" pin="true" [(ngModel)]="warmth">
+        <ion-icon range-left small primary name="battery-dead"></ion-icon>
+        <ion-icon range-right primary name="battery-full"></ion-icon>
+      </ion-range>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col width-25>
+          <ion-buttons>
+            <button>Back</button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col width-50>
+
+        </ion-col>
+        <ion-col width-25>
+          <ion-buttons end>
+            <button>Next</button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
 </ion-content>
+
