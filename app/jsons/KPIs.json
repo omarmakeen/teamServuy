@@ -11,7 +11,7 @@
     "KPI": "KPI14",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "Is the candidate solution-oriented? i.e. does NOT focus on problems but rather tries to reach solutions?",
     "weight": 3
   },
@@ -19,7 +19,7 @@
     "KPI": "KPI16",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "How hard-working is the candidate?",
     "weight": 2
   },
@@ -35,7 +35,7 @@
     "KPI": "KPI18",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "how far does the candidate show ownership towards the projects? E.g does he provide support when he is done from his commitment , does he try to deliver despite obstacles ?",
     "weight": 3
   },
@@ -59,7 +59,7 @@
     "KPI": "KPI28",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "How far the candidate follow project process?",
     "weight": 2
   },
@@ -123,7 +123,7 @@
     "KPI": "KPI34",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "Did the candidate fill in all assigned survives on time and with needed quality if any?",
     "weight": ""
   },
@@ -171,7 +171,7 @@
     "KPI": "KPI29",
     "goalType": "Performance",
     "goal": "Delivery and Productivity",
-    "category": "Produactivity",
+    "category": "Productivity",
     "question": "How often does the candidate meet his deadlines?",
     "weight": 3
   },

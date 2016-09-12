@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar
+    [(ngModel)]="searchQuery">
+  </ion-searchbar>
+  <ion-list>
+    <ion-list-header>
+      Available Surveys
+    </ion-list-header>
+    <ion-item *ngFor="let person of people | peopleSearch:searchQuery" (click)="openSurvey(person)">
+      <ion-avatar item-left>
+        <img src="build/img/girl_face.png">
+      </ion-avatar>
+      <h2>{{person.name.first}} {{person.name.last}}</h2>
+      <p>Senior Frontend Developer</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
