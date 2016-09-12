@@ -1,0 +1,354 @@
+[
+  {
+    "KPI": "KPIG",
+    "goalType": "Performance",
+    "goal": "?",
+    "category": "General",
+    "question": "Please describe your relationship to the candidate",
+    "weight": ""
+  },
+  {
+    "KPI": "KPI14",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "Is the candidate solution-oriented? i.e. does NOT focus on problems but rather tries to reach solutions?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI16",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "How hard-working is the candidate?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI17",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Attitude",
+    "question": "Does the candidate accept constructive feedback about his/her work, does he/she take responsibility for owns mistakes, admits them, accepts comments and and work on improving?",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI18",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "how far does the candidate show ownership towards the projects? E.g does he provide support when he is done from his commitment , does he try to deliver despite obstacles ?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI33",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Client facing",
+    "question": "How well does the candidate work with clients? Is the client satisfied? Can he gain his trust?",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI21",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Professionalism",
+    "question": "How professionally does the candidate behave?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI28",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "How far the candidate follow project process?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI25",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Reliability & Independence",
+    "question": "How much trust do you have in the candidate's ability to make the right decisions?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI27",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Reliability & Independence",
+    "question": "How much trust do you have in the candidate's ability to perform a correct job if left alone? E.g. would he/she deliver rightly with minimum follow-up? Go in the right direction, delivers on time, and delivers high quality, etc.?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI26",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Stress Management",
+    "question": "How well does the candidate handle stress? E.g. does he/she provide less quality if put under stress?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI15",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Team Play",
+    "question": "How well does the candidate collaborate and communicate with other employees , interface with clients and be a company Ambassador?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI19",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Team Play",
+    "question": "Rate the candidate's ability to solve NON-technical problems, e.g. team conflicts, spirit issues, overload, etc. & also contribute to solving team issues (process, plan, etc.)",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI22",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Team Play",
+    "question": "How far the candidate is capable of maintaining good positive team spirit & help creating positive atmosphere for their work",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI24",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Team Play",
+    "question": "How do you rate the candidate felixabilty  to share his knowledge with his colleagues?\nScore indicate no of sessions he shared\nGuidelines : Score indicates the number of lessons learnt shared",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI34",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "Did the candidate fill in all assigned survives on time and with needed quality if any?",
+    "weight": ""
+  },
+  {
+    "KPI": "KPI20",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Flexibility",
+    "question": "When the business priorities change, how quickly does the candidate adjust to changing priorities?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI23",
+    "goalType": "Performance",
+    "goal": "Winning Team",
+    "category": "Flexibility",
+    "question": "How far does the candidate accept new assignments ? E.g assignments not directly related to his core competency.",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI30",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Time Management",
+    "question": "How punctual is the candidate? E.g. comes to the office on time, attends the meetings on time, plan his vacations etc.",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI13",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Eye for detail",
+    "question": "How much attention to detail does the candidate have? E.g. covers all the required details, ask the right questions early, fully understand the business. etc.",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI32",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Innovation",
+    "question": "How do you rate the candidate's ability to bring new innovative ideas that support his team?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI29",
+    "goalType": "Performance",
+    "goal": "Delivery and Productivity",
+    "category": "Produactivity",
+    "question": "How often does the candidate meet his deadlines?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI3",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "How do you rate the candidate level in UI development? E.G: HTML,CSS,etc..",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI3",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "How do you rate the candidate level in Front End development? E.G: Jquery, Javascript, Angualr,etc..",
+    "weight": ""
+  },
+  {
+    "KPI": "KPI1",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "How do you rate the quality of the candidate's source code?\nGuideline :  score should be with respect to  min X defect per US , where X <  team defect threshold",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI10",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "how far the candidate is keen to create reusable, scalable and maintaible solution?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI2",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate accuracy of code review",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI4",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate's ability to solve technical problems",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI5",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate ability to provide proper design for a problem",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI6",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "How do you rate the candidate's code documentation and Project technical documentation?",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI7",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate's unit test business coverage\nGuideline for TL: score represent % of modules that doesnÕt have auto unit test",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI8",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate as fast learner",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI9",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "How far is the candidate up to date with  latest technology in his area of expertise?\n\nGuidelines : Score indicate no of new update about technology  / business (rate according to the seniority of the member 5 = fair session, 8 =  good session, 10 =  excellent session)",
+    "weight": 1
+  },
+  {
+    "KPI": "KPI39",
+    "goalType": "Performance",
+    "goal": "Core Technical Capabilities",
+    "category": "Technical",
+    "question": "Rate the candidate's ability to provide reliable estimation",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI35",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "How Far the candidate ensure delivery with high quality & applies the standard ways of ensuring that, e.g. code reviews, etc.",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI36",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "Rate the candidate ability to align and orchestrate the work of multiple platforms at the same time?",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI37",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "Rate the candidate overall picture understanding?",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI38",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "Rate the candidate's capability to set the right priorities",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI40",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "Rate the Candidate's ability to distribute the tasks among team members and follow-up on them effectively",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI41",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "Rate the candidate's ability to delegate the right tasks and keep the right tasks for him/her-self, in the right effective manner",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI42",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "How far  does the candidate prepare needed work for the next release effectively ? E.G : align with BE readiness , UI readiness, raise relevant risks, work closely with BA",
+    "weight": 3
+  },
+  {
+    "KPI": "KPI43",
+    "goalType": "Performance",
+    "goal": "Leadership",
+    "category": "Leadership",
+    "question": "How far  does the candidate Support Capability manager in leading capability by providing ideas, leading initiatives, team development planetc..",
+    "weight": 2
+  },
+  {
+    "KPI": "KPI44",
+    "goalType": "Development",
+    "goal": "",
+    "category": "",
+    "question": "Did the candidate managed to c complete all mandatory  training on time as per development plan",
+    "weight": ""
+  },
+  {
+    "KPI": "KPIC",
+    "goalType": "",
+    "goal": "",
+    "category": "Comments",
+    "question": "Any other specific feedback about the candidate you want to share in free text?",
+    "weight": ""
+  }
+]
