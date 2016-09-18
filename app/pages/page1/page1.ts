@@ -3,7 +3,7 @@ import { NavController, Loading } from 'ionic-angular';
 import { PeopleService } from '../../providers/people-service/people-service';
 import { PeopleSearch } from '../../pipes/people-search';
 import { SurveyDetailsPage } from '../survey-details/survey-details';
-import {SurveyService} from "../../providers/survey-service/survey-service";
+import {SurveyService} from '../../providers/survey-service/survey-service';
 
 
 @Component({
@@ -13,16 +13,14 @@ import {SurveyService} from "../../providers/survey-service/survey-service";
 })
 export class Page1 {
 
-  public people:any;
-  public survey:any;
+  public people: any;
+  public survey: any;
 
-  constructor(private navController:NavController, public peopleService:PeopleService, public surveyService:SurveyService) {
+  constructor(private navController: NavController, public peopleService: PeopleService, public surveyService: SurveyService) {
     this.loadPeople();
   }
 
   loadPeople() {
-
-    //this.presentLoading();
     this.peopleService.load()
       .then(data => {
         this.people = data;
@@ -31,7 +29,7 @@ export class Page1 {
 
   presentLoading() {
     let loading = Loading.create({
-      content: "Please wait...",
+      content: 'Please wait...',
       dismissOnPageChange: true
     });
     this.navController.present(loading);

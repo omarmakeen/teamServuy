@@ -67,7 +67,7 @@ var ionic_angular_1 = require('ionic-angular');
 var people_service_1 = require('../../providers/people-service/people-service');
 var people_search_1 = require('../../pipes/people-search');
 var survey_details_1 = require('../survey-details/survey-details');
-var survey_service_1 = require("../../providers/survey-service/survey-service");
+var survey_service_1 = require('../../providers/survey-service/survey-service');
 var Page1 = (function () {
     function Page1(navController, peopleService, surveyService) {
         this.navController = navController;
@@ -77,7 +77,6 @@ var Page1 = (function () {
     }
     Page1.prototype.loadPeople = function () {
         var _this = this;
-        //this.presentLoading();
         this.peopleService.load()
             .then(function (data) {
             _this.people = data;
@@ -85,7 +84,7 @@ var Page1 = (function () {
     };
     Page1.prototype.presentLoading = function () {
         var loading = ionic_angular_1.Loading.create({
-            content: "Please wait...",
+            content: 'Please wait...',
             dismissOnPageChange: true
         });
         this.navController.present(loading);
@@ -252,13 +251,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
+var ionic_angular_1 = require('ionic-angular');
 var PeopleService = (function () {
-    function PeopleService(http) {
+    function PeopleService(http, navController) {
         this.http = http;
+        this.navController = navController;
+        this.loading = ionic_angular_1.Loading.create({
+            content: 'Please wait...',
+            dismissOnPageChange: true
+        });
         this.data = null;
     }
     PeopleService.prototype.load = function () {
         var _this = this;
+        // loading dialog
+        this.presentLoading();
         if (this.data) {
             // already loaded data
             return Promise.resolve(this.data);
@@ -273,15 +280,21 @@ var PeopleService = (function () {
             });
         });
     };
+    PeopleService.prototype.presentLoading = function () {
+        this.navController.present(this.loading);
+    };
+    PeopleService.prototype.dismissLoading = function () {
+        this.loading.dismiss();
+    };
     PeopleService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [http_1.Http, ionic_angular_1.NavController])
     ], PeopleService);
     return PeopleService;
 }());
 exports.PeopleService = PeopleService;
 
-},{"@angular/core":154,"@angular/http":242,"rxjs/add/operator/map":518}],7:[function(require,module,exports){
+},{"@angular/core":154,"@angular/http":242,"ionic-angular":418,"rxjs/add/operator/map":518}],7:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

@@ -1,16 +1,25 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { NavController, Loading } from 'ionic-angular';
 
 @Injectable()
 export class PeopleService {
   data: any;
 
-  constructor(private http: Http) {
+  loading = Loading.create({
+      content: 'Please wait...',
+      dismissOnPageChange: true
+    });
+
+  constructor(private http: Http, private navController: NavController) {
     this.data = null;
   }
 
   load() {
+
+    // loading dialog
+    this.presentLoading();
     if (this.data) {
       // already loaded data
       return Promise.resolve(this.data);
@@ -25,6 +34,14 @@ export class PeopleService {
           resolve(this.data);
         });
     });
+  }
+
+    presentLoading() {
+    this.navController.present(this.loading);
+  }
+
+  dismissLoading() {
+    this.loading.dismiss();
   }
 }
 

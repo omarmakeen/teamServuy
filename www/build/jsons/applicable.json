@@ -1,0 +1,266 @@
+[
+  {
+    "KPI": "KPIG",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue4",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue6",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue7",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue8",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI33",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI2true",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI28",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI25",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI27",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI26",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue5",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue9",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI22",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI24",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI34",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI2false",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI23",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI3false",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue3",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI32",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI29",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI3",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI3",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItrue",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPItruefalse",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI2",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI4",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI5",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI6",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI7",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI8",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI9",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI39",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI35",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI36",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI37",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI38",
+    "junior": false,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPI4false",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI4true",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI42",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI43",
+    "junior": false,
+    "senior": false,
+    "TL": true
+  },
+  {
+    "KPI": "KPI44",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  },
+  {
+    "KPI": "KPIC",
+    "junior": true,
+    "senior": true,
+    "TL": true
+  }
+]
