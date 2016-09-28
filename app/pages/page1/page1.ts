@@ -9,10 +9,9 @@ import {SurveyService} from '../../providers/survey-service/survey-service';
 @Component({
   templateUrl: 'build/pages/page1/page1.html',
   providers: [PeopleService, SurveyService],
-  pipes: [PeopleSearch]
+  pipes:   [PeopleSearch]
 })
 export class Page1 {
-
   public people: any;
   public survey: any;
 
@@ -44,7 +43,7 @@ export class Page1 {
     this.surveyService.load()
       .then(data => {
         this.survey = data;
-        this.navController.push(SurveyDetailsPage, {survey: this.survey});
+        this.navController.push(SurveyDetailsPage, { survey: this.survey });
       });
   }
 
