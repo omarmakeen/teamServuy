@@ -52,7 +52,6 @@ var MyApp = (function () {
     return MyApp;
 }());
 ionic_angular_1.ionicBootstrap(MyApp);
-
 },{"./pages/loginPage/loginPage":2,"./pages/page1/page1":3,"./pages/page2/page2":4,"@angular/core":155,"ionic-angular":419,"ionic-native":446}],2:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -67,27 +66,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
 var people_service_1 = require('../../providers/people-service/people-service');
-var people_search_1 = require('../../pipes/people-search');
-var survey_service_1 = require('../../providers/survey-service/survey-service');
 var LoginPage = (function () {
-    function LoginPage(navController, peopleService, surveyService) {
+    function LoginPage(navController, peopleService) {
         this.navController = navController;
         this.peopleService = peopleService;
-        this.surveyService = surveyService;
     }
+    LoginPage.prototype.login = function () {
+        console.log('LOGIN');
+    };
     LoginPage = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/loginPage/loginPage.html',
-            providers: [people_service_1.PeopleService, survey_service_1.SurveyService],
-            pipes: [people_search_1.PeopleSearch]
+            providers: [people_service_1.PeopleService],
         }), 
-        __metadata('design:paramtypes', [ionic_angular_1.NavController, people_service_1.PeopleService, survey_service_1.SurveyService])
+        __metadata('design:paramtypes', [ionic_angular_1.NavController, people_service_1.PeopleService])
     ], LoginPage);
     return LoginPage;
 }());
 exports.LoginPage = LoginPage;
-
-},{"../../pipes/people-search":6,"../../providers/people-service/people-service":7,"../../providers/survey-service/survey-service":8,"@angular/core":155,"ionic-angular":419}],3:[function(require,module,exports){
+},{"../../providers/people-service/people-service":7,"@angular/core":155,"ionic-angular":419}],3:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -147,7 +144,6 @@ var Page1 = (function () {
     return Page1;
 }());
 exports.Page1 = Page1;
-
 },{"../../pipes/people-search":6,"../../providers/people-service/people-service":7,"../../providers/survey-service/survey-service":8,"../survey-details/survey-details":5,"@angular/core":155,"ionic-angular":419}],4:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -193,7 +189,6 @@ var Page2 = (function () {
     return Page2;
 }());
 exports.Page2 = Page2;
-
 },{"@angular/core":155,"ionic-angular":419}],5:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -235,7 +230,6 @@ var SurveyDetailsPage = (function () {
     return SurveyDetailsPage;
 }());
 exports.SurveyDetailsPage = SurveyDetailsPage;
-
 },{"@angular/core":155,"ionic-angular":419}],6:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -272,7 +266,6 @@ var PeopleSearch = (function () {
     return PeopleSearch;
 }());
 exports.PeopleSearch = PeopleSearch;
-
 },{"@angular/core":155}],7:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -329,7 +322,6 @@ var PeopleService = (function () {
     return PeopleService;
 }());
 exports.PeopleService = PeopleService;
-
 },{"@angular/core":155,"@angular/http":243,"ionic-angular":419,"rxjs/add/operator/map":519}],8:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -378,7 +370,6 @@ var SurveyService = (function () {
     return SurveyService;
 }());
 exports.SurveyService = SurveyService;
-
 },{"@angular/core":155,"@angular/http":243,"rxjs/add/operator/map":519}],9:[function(require,module,exports){
 "use strict";
 function __export(m) {
