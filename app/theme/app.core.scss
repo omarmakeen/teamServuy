@@ -11,6 +11,25 @@
 
 @import "../pages/page2/page2";
 
+@import "../pages/loginPage/login.page";
+
 @import "../pages/survey-details/survey-details";
+
+/************** Fonts *****************/
+
+@font-face {
+  font-family: 'VodafoneRg-Regular';
+  src: url('../fonts/VodafoneRg-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/VodafoneRg-Regular.woff') format('woff'), 
+  url('../fonts/VodafoneRg-Regular.ttf')  format('truetype'), 
+  url('../fonts/VodafoneRg-Regular.svg#VodafoneRg-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'VodafoneRg-Regular';
+}
+
 
 

@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
-  gulpWatch = require('gulp-watch'),
-  del = require('del'),
-  runSequence = require('run-sequence'),
-  argv = process.argv;
+    gulpWatch = require('gulp-watch'),
+    del = require('del'),
+    runSequence = require('run-sequence'),
+    argv = process.argv;
 
 
 /**
@@ -36,53 +36,65 @@ var tslint = require('ionic-gulp-tslint');
 
 var isRelease = argv.indexOf('--release') > -1;
 
-gulp.task('watch', ['clean'], function (done) {
-  runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'images', 'jsons'],
-    function () {
-      gulpWatch('app/**/*.scss', function () {
-        gulp.start('sass');
-      });
-      gulpWatch('app/**/*.html', function () {
-        gulp.start('html');
-      });
-      buildBrowserify({watch: true}).on('end', done);
-    }
-  );
+gulp.task('watch', ['clean'], function(done) {
+    runSequence(
+        ['sass', 'html', 'fonts', 'scripts', 'images', 'jsons'],
+        function() {
+            gulpWatch('app/**/*.scss', function() {
+                gulp.start('sass');
+            });
+            gulpWatch('app/**/*.html', function() {
+                gulp.start('html');
+            });
+            buildBrowserify({ watch: true }).on('end', done);
+        }
+    );
 });
 
-gulp.task('build', ['clean'], function (done) {
-  runSequence(
-    ['sass', 'html', 'fonts', 'scripts', 'images', 'jsons'],
-    function () {
-      buildBrowserify({
-        minify: isRelease,
-        browserifyOptions: {
-          debug: !isRelease
-        },
-        uglifyOptions: {
-          mangle: false
+gulp.task('build', ['clean'], function(done) {
+    runSequence(
+        ['sass', 'html', 'fonts', 'scripts', 'images', 'jsons'],
+        function() {
+            buildBrowserify({
+                minify: isRelease,
+                browserifyOptions: {
+                    debug: !isRelease
+                },
+                uglifyOptions: {
+                    mangle: false
+                }
+            }).on('end', done);
         }
-      }).on('end', done);
-    }
-  );
+    );
 });
 
 gulp.task('sass', buildSass);
 gulp.task('html', copyHTML);
 gulp.task('fonts', copyFonts);
 gulp.task('scripts', copyScripts);
-gulp.task('clean', function () {
-  return del('www/build');
+gulp.task('clean', function() {
+    return del('www/build');
 });
 gulp.task('lint', tslint);
 
-gulp.task('images', function () {
-  return gulp.src('app/images/**/*.+(jpg|png|svg)')
-    .pipe(gulp.dest('www/build/img'));
+gulp.task('images', function() {
+    return gulp.src('app/images/**/*.+(jpg|png|svg)')
+        .pipe(gulp.dest('www/build/img'));
+});
+// gulp.task('fonts', function() {
+//     return gulp.src('app/fonts/*.+(eot|ttf|woff)')
+//         .pipe(gulp.dest('www/build/fonts'));
+// });
+
+gulp.task("customFonts", function() {
+    return copyFonts({
+        src: [
+            "app/fonts/**/*.+(eot|ttf|woff|woff2|svg)"
+        ]
+    }).pipe(gulp.dest('www/build/fonts'));
 });
 
-gulp.task('jsons', function () {
-  return gulp.src('app/jsons/**/*.+(json)')
-    .pipe(gulp.dest('www/build/jsons'));
+gulp.task('jsons', function() {
+    return gulp.src('app/jsons/**/*.+(json)')
+        .pipe(gulp.dest('www/build/jsons'));
 });
