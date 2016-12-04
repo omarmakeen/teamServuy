@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
-import {Config} from '../../config';
+import { Config } from '../../config';
+import { LoginModel } from '../../models/login.model';
+
 
 /*
   Generated class for the LoginService provider.
@@ -12,28 +14,29 @@ import {Config} from '../../config';
 @Injectable()
 export class LoginService {
   data: any;
+  showAccessCode: boolean;
 
   constructor(private http: Http, private config: Config) {
     this.data = null;
   }
 
-  load() {
+  login(staffId, email) {
     if (this.data) {
-      // already loaded data
       return Promise.resolve(this.data);
     }
 
+    let loginModel: LoginModel = { staffId: staffId, email: email };
+    let body = JSON.stringify(loginModel);
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+
     // don't have the data yet
     return new Promise(resolve => {
-      // We're using Angular Http provider to request the data,
-      // then on the response it'll map the JSON data to a parsed JS object.
-      // Next we process the data and resolve the promise with the new data.
-      this.http.get(this.config.BASEURL + this.config.AUTHENTICATION_URL)
-        .map(res => res.json())
+      this.http.post(this.config.BASEURL + this.config.AUTHENTICATION_URL, body, options)
+        .map(res => res.json().results)
         .subscribe(data => {
-          // we've got back the raw data, now generate the core schedule data
-          // and save the data for later reference
           this.data = data;
+          this.showAccessCode = true;
           resolve(this.data);
         });
     });

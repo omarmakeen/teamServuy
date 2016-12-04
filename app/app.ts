@@ -3,7 +3,8 @@ import { ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import { Page1 } from './pages/page1/page1';
 import { Page2 } from './pages/page2/page2';
-import { LoginPage } from './pages/loginPage/loginPage';
+import { LoginPage } from './pages/loginPage/login.page';
+import { Config } from './config';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -13,7 +14,7 @@ class MyApp {
 
   rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(private platform: Platform) {
     this.initializeApp();
@@ -42,4 +43,4 @@ class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [Config]);

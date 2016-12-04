@@ -1,0 +1,25 @@
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Staff ID</ion-label>
+      <ion-input [(ngModel)]="staffId" type="number" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email" value=""></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="showAccessCode">
+      <ion-label fixed>Access Code</ion-label>
+      <ion-input [(ngModel)]="accessCode" type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button round (click)='login()'>Login</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
