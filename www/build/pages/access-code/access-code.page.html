@@ -1,0 +1,16 @@
+<ion-content class="loginPage">
+  <div class="logo"></div>
+  <div class="login-background"></div>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Access Code</ion-label>
+      <ion-input #verificationCode [value]="accessCode" type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button round (click)='verify(verificationCode.value)'>Login</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
