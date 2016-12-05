@@ -12,7 +12,7 @@ import { Config } from './config';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = Page1;
 
   pages: Array<{ title: string, component: any }>;
 

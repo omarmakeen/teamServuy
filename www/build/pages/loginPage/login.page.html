@@ -1,0 +1,26 @@
+<ion-content class="loginPage">
+  <div class="logo"></div>
+  <div class="login-background"></div>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Staff ID</ion-label>
+      <ion-input [(ngModel)]="staffId" type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email" value=""></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="showAccessCode">
+      <ion-label floating>Access Code</ion-label>
+      <ion-input [(ngModel)]="accessCode" type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button round full (click)='login()'>Login</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

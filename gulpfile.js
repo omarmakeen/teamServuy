@@ -81,17 +81,9 @@ gulp.task('images', function() {
     return gulp.src('app/images/**/*.+(jpg|png|svg)')
         .pipe(gulp.dest('www/build/img'));
 });
-// gulp.task('fonts', function() {
-//     return gulp.src('app/fonts/*.+(eot|ttf|woff)')
-//         .pipe(gulp.dest('www/build/fonts'));
-// });
-
-gulp.task("customFonts", function() {
-    return copyFonts({
-        src: [
-            "app/fonts/**/*.+(eot|ttf|woff|woff2|svg)"
-        ]
-    }).pipe(gulp.dest('www/build/fonts'));
+gulp.task('fonts', function() {
+    return gulp.src('app/fonts/*.+(eot|ttf|woff|woff2)')
+        .pipe(gulp.dest('www/build/fonts'));
 });
 
 gulp.task('jsons', function() {

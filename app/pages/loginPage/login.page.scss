@@ -51,9 +51,7 @@ ion-list > .item:first-child {
             position: relative;
             background: $mainColor;
             padding: 25px 0;
-            width: 99%;
             border-radius: 3px;
-            float: right;
             font-size: 18px;
             &:after {
                 content: "";
@@ -66,6 +64,8 @@ ion-list > .item:first-child {
                 height: 100%;
                 width: 100%;
                 transition: 0.3s;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
             }
             &:hover:after {
                 top: 90%;
